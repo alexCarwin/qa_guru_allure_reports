@@ -31,7 +31,7 @@ public class IssueTest {
     @Feature("Репозиторий в github")
     @Story("Раздел Issue")
     @Owner("LatushkinAl")
-    @DisplayName("проверку названия Issue в репозитории, используя чистый Selenide")
+    @DisplayName("Проверка названия Issue в репозитории, используя чистый Selenide")
     public void testIssueNameWithSelenide() {
 
         open("https://github.com/");
@@ -48,7 +48,7 @@ public class IssueTest {
     @Feature("Репозиторий в github")
     @Story("Раздел Issue")
     @Owner("LatushkinAl")
-    @DisplayName("проверка названия Issue в репозитори, используя лямбда шаги через step")
+    @DisplayName("Проверка названия Issue в репозитори, используя лямбда шаги через step")
     public void testIssueNameWithLambda() {
 
         step("Открываем github.com",
@@ -71,7 +71,7 @@ public class IssueTest {
     @Feature("Репозиторий в github")
     @Story("Раздел Issue")
     @Owner("LatushkinAl")
-    @DisplayName("проверка названия Issue в репозитории, используя шаги с аннотацией @Step")
+    @DisplayName("Проверка названия Issue в репозитории, используя шаги с аннотацией @Step")
     public void testIssueNameWithAnnotatedStep() {
         WebSteps steps = new WebSteps();
 
