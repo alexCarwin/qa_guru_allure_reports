@@ -8,7 +8,7 @@ allure {
         version.set("2.29.0")
     }
     adapter { // отвечает за появление каталога build/allure-results
-        aspectjWeaver.set(true)
+        aspectjWeaver.set(true) //обработка аннотации @Step
         frameworks {
             junit5 {
                 adapterVersion.set("2.29.0")
