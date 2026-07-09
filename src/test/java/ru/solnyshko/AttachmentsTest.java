@@ -1,6 +1,7 @@
 package ru.solnyshko;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -33,6 +34,6 @@ public class AttachmentsTest {
         WebSteps steps = new WebSteps();
 
         steps.openMainPage();
-        steps.takeScreenshot();
+        Attach.takeScreenshot();
     }
 }
